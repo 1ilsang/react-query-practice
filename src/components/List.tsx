@@ -10,7 +10,7 @@ const List: FunctionComponent = () => {
       <h1>LIST</h1>
       <button onClick={() => mutation.mutate()}>Add list(mutation)</button>
       <div>isLoading: {isLoading ? "o" : "x"}</div>
-      {/* Mutation loading */}
+      {/* Mutation loading은 suspense에 걸리지 않는다. */}
       <div>isMutationLoading: {mutation.isLoading ? "o" : "x"}</div>
       <div>isFetching: {isFetching ? "o" : "x"}</div>
       <ul>
