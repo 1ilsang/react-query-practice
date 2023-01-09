@@ -4,7 +4,7 @@ const cors = require("@koa/cors");
 const app = new Koa();
 
 // 500 ~ 1500 ms
-const getRandom = Math.floor(Math.random() * 1000 + 500);
+const getRandom = () => Math.floor(Math.random() * 1000 + 500);
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 

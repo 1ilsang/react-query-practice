@@ -53,6 +53,7 @@ const Body: FunctionComponent = () => {
       {isLoading && <h1>Loading...</h1>}
       {isFetching && <h1>Fetching...</h1>}
 
+      <hr />
       {/* id가 같을 경우 동일한 쿼리를 사용함을 확인 */}
       {flash && (
         <Suspense fallback={<h1>Flash LOADING... SUSPENSE</h1>}>
@@ -65,7 +66,7 @@ const Body: FunctionComponent = () => {
           <FlashComponent id={flashId} />
         </Suspense>
       )}
-
+      <hr />
       <Suspense fallback={<h1>LIST LOADING SUSPENSE</h1>}>
         <List />
       </Suspense>

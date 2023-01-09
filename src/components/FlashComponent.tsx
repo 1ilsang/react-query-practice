@@ -16,7 +16,9 @@ const FlashComponent: FunctionComponent<FlashComponentProps> = ({ id }) => {
 
   return (
     <>
-      <h1>OPEN FLASH! {data}</h1>
+      <h1>
+        OPEN FLASH {id}! {data}
+      </h1>
       <button onClick={() => refetch()}>refetch</button>
     </>
   );
